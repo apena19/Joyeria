@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Jewelry</string>
+    <string name="lbl_titulo">Rich Jewelry</string>
+    <string name="lbl_cuero">Leather</string>
+    <string name="lbl_material">Material</string>
+    <string name="lbl_cuerda">Rope</string>
+    <string name="lbl_Dijen">Said</string>
+    <string name="lbl_martillo">Hammer</string>
+    <string name="lbl_ancla">Anchor</string>
+    <string name="lbl_oro">Gold</string>
+    <string name="lbl_oro_rosado">Pink gold</string>
+    <string name="lbl_Plata">Silver</string>
+    <string name="lbl_niquel">Nickel</string>
+    <string name="lbl_moneda">Type of currency</string>
+    <string name="lbl_cantidad">Quantity</string>
+    <string name="lbl_comprar">" Buy"</string>
+    <string name="lbl_tipo">Type</string>
+    <string name="lbl_opcion_vacio">Select A Currency</string>
+    <string name="lbl_cop">Colombian peso</string>
+    <string name="lbl_usd">American dollar</string>
+    <string name="lbl_resultado">The Total to Pay is:</string>
+</resources>
