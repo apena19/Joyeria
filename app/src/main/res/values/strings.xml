@@ -24,5 +24,5 @@
         <item>@string/lbl_cop</item>
         <item>@string/lbl_usd</item>
     </string-array>
-
+    <string name="error">Todos los campos son Obligatorios</string>
 </resources>

@@ -20,4 +20,5 @@
     <string name="lbl_cop">Colombian peso</string>
     <string name="lbl_usd">American dollar</string>
     <string name="lbl_resultado">The Total to Pay is:</string>
+    <string name="error">All Fields required</string>
 </resources>

@@ -33,7 +33,7 @@
         app:layout_constraintBottom_toTopOf="@+id/rbgMaterial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lblTitulo"
-        tools:text="@string/lbl_material"></TextView>
+        android:text="@string/lbl_material"></TextView>
 
     <RadioGroup
         android:id="@+id/rbgMaterial"
@@ -63,15 +63,16 @@
         android:layout_height="30dp"
         android:layout_marginStart="44dp"
         android:layout_marginTop="13dp"
+        android:text="@string/lbl_Dijen"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="17sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/rbgDijen"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/lblMaterial"
         app:layout_constraintTop_toBottomOf="@+id/lblTitulo"
-        app:layout_constraintVertical_bias="0.0"
-        tools:text="@string/lbl_Dijen"></TextView>
+        app:layout_constraintVertical_bias="0.0"></TextView>
 
     <RadioGroup
         android:id="@+id/rbgDijen"
@@ -93,7 +94,7 @@
             android:id="@+id/rbtAncla"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/lbl_cuerda"></RadioButton>
+            android:text="@string/lbl_ancla"></RadioButton>
     </RadioGroup>
 
     <TextView
@@ -107,10 +108,7 @@
         app:layout_constraintBottom_toTopOf="@+id/rbgTipo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rbgMaterial"
-        app:layout_constraintVertical_bias="1.0"
-        tools:text="@string/lbl_tipo"></TextView>
-
+        android:text="@string/lbl_tipo"></TextView>
     <RadioGroup
         android:id="@+id/rbgTipo"
         android:layout_width="match_parent"
@@ -210,26 +208,29 @@
         android:id="@+id/btnComprar"
         android:layout_width="182dp"
         android:layout_height="51dp"
-        android:layout_marginBottom="64dp"
+        android:layout_marginBottom="84dp"
+        android:onClick="calcular"
         android:text="@string/lbl_comprar"
         android:textAlignment="center"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/lblResultado"
         android:layout_width="0dp"
         android:layout_height="35dp"
-        android:textAlignment="textStart"
+        android:textAlignment="center"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/btnComprar"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtTipoMoneda"
-        app:layout_constraintVertical_bias="0.578" />
+        app:layout_constraintVertical_bias="0.533" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
