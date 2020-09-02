@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">Joyeria</string>
+    <string name="lbl_titulo">Joyeria Ricos</string>
+    <string name="lbl_material">Material</string>
+    <string name="lbl_cuero">Cuero</string>
+    <string name="lbl_cuerda">Cuerda</string>
+    <string name="lbl_Dijen">Dijen</string>
+    <string name="lbl_martillo">Martillo</string>
+    <string name="lbl_ancla">Ancla</string>
+    <string name="lbl_oro">Oro</string>
+    <string name="lbl_oro_rosado">Oro Rosado</string>
+    <string name="lbl_Plata">Plata</string>
+    <string name="lbl_niquel">Niquel</string>
+    <string name="lbl_moneda">Tipo de Moneda</string>
+    <string name="lbl_cantidad">Cantidad</string>
+    <string name="lbl_comprar">Comprar</string>
+    <string name="lbl_tipo">Tipo</string>
+    <string name="lbl_opcion_vacio"> Seleccione Una Moneda</string>
+    <string name="lbl_cop"> Peso Colombiano</string>
+    <string name="lbl_usd"> Dolar Estadounidense</string>
+    <string-array name="tipo_moneda_array">
+        <item>@string/lbl_opcion_vacio</item>
+        <item>@string/lbl_cop</item>
+        <item>@string/lbl_usd</item>
+    </string-array>
+
 </resources>

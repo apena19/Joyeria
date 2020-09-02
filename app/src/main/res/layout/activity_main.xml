@@ -7,12 +7,219 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/lblTitulo"
+        android:layout_width="190dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/lbl_titulo"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblMaterial"
+        android:layout_width="152dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="12dp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/rbgMaterial"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblTitulo"
+        tools:text="@string/lbl_material"></TextView>
+
+    <RadioGroup
+        android:id="@+id/rbgMaterial"
+        android:layout_width="152dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblTitulo">
+
+        <RadioButton
+            android:id="@+id/rbtCuero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_cuero"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/rbtCuerda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_cuerda"></RadioButton>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/lblDijen"
+        android:layout_width="144dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="13dp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/rbgDijen"
+        app:layout_constraintStart_toEndOf="@+id/lblMaterial"
+        app:layout_constraintTop_toBottomOf="@+id/lblTitulo"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="@string/lbl_Dijen"></TextView>
+
+    <RadioGroup
+        android:id="@+id/rbgDijen"
+        android:layout_width="146dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.659"
+        app:layout_constraintStart_toEndOf="@+id/rbgMaterial"
+        app:layout_constraintTop_toBottomOf="@+id/lblTitulo">
+
+        <RadioButton
+            android:id="@+id/rbtMartillo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_martillo"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/rbtAncla"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_cuerda"></RadioButton>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/lblTipo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/rbgTipo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rbgMaterial"
+        app:layout_constraintVertical_bias="1.0"
+        tools:text="@string/lbl_tipo"></TextView>
+
+    <RadioGroup
+        android:id="@+id/rbgTipo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblTitulo">
+
+        <RadioButton
+            android:id="@+id/rbtOro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="110sp"
+            android:text="@string/lbl_oro"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/rbtOroRosado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="110sp"
+            android:text="@string/lbl_oro_rosado"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/rbtPlata"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="110sp"
+            android:text="@string/lbl_Plata"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/rbtNiquel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="110sp"
+            android:text="@string/lbl_niquel"></RadioButton>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/lblTipoMoneda"
+        android:layout_width="157dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="35dp"
+        android:text="@string/lbl_moneda"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtTipoMoneda"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rbgTipo"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/txtCantidad"
+        android:layout_width="113dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/txtTipoMoneda"
+        app:layout_constraintTop_toBottomOf="@+id/rbgTipo" />
+
+    <Spinner
+        android:id="@+id/txtTipoMoneda"
+        android:layout_width="247dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="76dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rbgTipo" />
+
+    <TextView
+        android:id="@+id/lblCantidad"
+        android:layout_width="118dp"
+        android:layout_height="28dp"
+        android:text="@string/lbl_cantidad"
+        android:textAlignment="viewStart"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtCantidad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.873"
+        app:layout_constraintStart_toEndOf="@+id/lblTipoMoneda"
+        app:layout_constraintTop_toBottomOf="@+id/rbgTipo"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btnComprar"
+        android:layout_width="182dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="148dp"
+        android:text="@string/lbl_comprar"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCantidad"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
